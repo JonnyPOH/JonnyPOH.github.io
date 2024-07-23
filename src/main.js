@@ -1,4 +1,4 @@
-import { k } from "./kaboomCtx";
+import { k } from "./src/kaboomCtx";
 
 // Simple test to set background color
 k.setBackground(k.Color.fromHex("#311047"));
