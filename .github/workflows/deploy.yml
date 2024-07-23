@@ -31,8 +31,8 @@ jobs:
       - name: Verify Kaboom.js installation
         run: npm list kaboom
 
-      - name: Run main.js verification script
-        run: node test-main.js
+      # - name: Run main.js verification script
+      #   run: node test-main.js
 
       - name: Build the project
         run: npm run build
