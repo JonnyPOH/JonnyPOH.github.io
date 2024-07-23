@@ -1,5 +1,25 @@
 import kaboom from "kaboom";
 
+// Log a message at the very beginning
+console.log("Starting execution of main.js");
+
+// Perform a simple arithmetic operation
+const a = 5;
+const b = 3;
+const sum = a + b;
+console.log(`The sum of ${a} and ${b} is ${sum}`);
+
+// Add a text element to the DOM to verify execution
+const message = document.createElement("div");
+message.textContent = "main.js has been picked up";
+message.style.position = "absolute";
+message.style.top = "10px";
+message.style.left = "10px";
+message.style.color = "white";
+document.body.appendChild(message);
+
+console.log("Added verification text to the DOM");
+
 console.log("Initializing Kaboom");
 
 export const k = kaboom({
@@ -34,8 +54,8 @@ k.scene("main", () => {
   console.log("Text added to scene");
 });
 
-console.log("Starting main scene");
+console.log("Going to main scene");
 
 k.go("main");
 
-console.log("Main scene started");
+console.log("Main.js execution finished");
