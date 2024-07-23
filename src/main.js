@@ -1,21 +1,26 @@
 import kaboom from "kaboom";
-// import { scaleFactor } from "./constants";
+
+console.log("Initializing Kaboom");
 
 export const k = kaboom({
   global: false,
   touchToMouse: true,
   canvas: document.getElementById("game"),
-  debug: false, // set to false once ready for production
+  debug: true,
 });
 
+console.log("Setting background color");
 
-// import { k } from "./kaboomCtx";
-
-// Simple test to set background color
 k.setBackground(k.Color.fromHex("#311047"));
 
-// k.scene("main", () => {
-//   // Your scene setup code here
-// });
+k.scene("main", () => {
+  console.log("Main scene started");
+  k.add([
+    k.text("Hello Kaboom", { size: 32 }),
+    k.pos(100, 100),
+  ]);
+});
+
+console.log("Starting main scene");
 
 k.go("main");
