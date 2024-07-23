@@ -25,6 +25,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install canvas package
+        run: npm install canvas --save-dev
+
       - name: Verify Kaboom.js installation
         run: npm list kaboom
 
