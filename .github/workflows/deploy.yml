@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v2
+        with:
+          submodules: false  # Ensure submodules are not checked out
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
@@ -18,7 +20,7 @@ jobs:
           node-version: '16'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build the project
         run: npm run build
