@@ -11,7 +11,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: '/JonnyPOH.github.io/',  // Adjust this to your repository name
+  base: '/interactive-portfolio/',  // Adjust this to your repository name
   build: {
     minify: "terser",
   },
