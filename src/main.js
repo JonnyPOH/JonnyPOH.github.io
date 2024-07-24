@@ -18,7 +18,7 @@ console.log("Added verification text to the DOM");
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-import kaboom from "kaboom";
+import kaboom from 'https://unpkg.com/kaboom@3000.1.17/dist/kaboom.mjs';
 
 export const k = kaboom({
   global: false,
