@@ -27,27 +27,8 @@ export const k = kaboom({
   debug: true,
 });
 
-console.log("Kaboom initialized");
-
-// Simple check to confirm the environment
-if (!k) {
-  console.error("Kaboom initialization failed");
-  process.exit(1);
-} else {
-  console.log("Kaboom initialization successful");
-}
-
-console.log("Setting background color");
-
 k.setBackground(k.Color.fromHex("#311047"));
-
-console.log("Background color set");
-
-console.log("Going to main scene");
-
 k.go("main");
-
-console.log("Main.js execution finished");
 
 
 
